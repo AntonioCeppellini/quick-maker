@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 //import everything that we need
+const chalk = require ('chalk')
 const inquirer = require('inquirer');
 const { spawn } = require('child_process');
 //creating the questions that we need in the CLI app using inquirer
@@ -17,7 +18,7 @@ const questions = [
 ];
 //creating the interations that we need in the CLI app using inquirer
 inquirer.prompt(questions).then(answers => {
-    console.log(`Creating your ${answers.Project}...`)
+    console.log(chalk.backgroundColorNames(`Creating your ${answers.Project}...`))
     //initialize the variables that we'll use for the decisions making
     var project_type = answers.Project;
     var project_name = answers.name;
@@ -28,7 +29,7 @@ inquirer.prompt(questions).then(answers => {
         commandAngular.on('close', (code) => {
             //code 0 means that everything is going all right
             if (code === 0) {
-                console.log(`Your ${project_type} has been created successfully!`)
+                console.log(chalk.green(`Your ${project_type} has been created successfully!`))
             } else {
                 console.log(error)
             }
@@ -38,7 +39,7 @@ inquirer.prompt(questions).then(answers => {
         const commandAngular = spawn(`ng new ${project_name}`, {shell : true, stdio: 'inherit', })
         commandAngular.on('close', (code) => {
             if (code === 0) {
-                console.log(`Your ${project_type} has been created successfully!`)
+                console.log(chalk.green(`Your ${project_type} has been created successfully!`))
             } else {
                 console.log(error)
             }
@@ -48,7 +49,7 @@ inquirer.prompt(questions).then(answers => {
         const commandAngular = spawn(`vue create -d ${project_name}`, {shell : true, stdio: 'inherit', })
         commandAngular.on('close', (code) => {
             if (code === 0) {
-                console.log(`Your ${project_type} has been created successfully!`)
+                console.log(chalk.green(`Your ${project_type} has been created successfully!`))
             } else {
                 console.log(error)
             }

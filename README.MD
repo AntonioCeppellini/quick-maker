@@ -9,7 +9,7 @@ npm install quick-maker
 Make sure to have angular and vue installed on your system.
 If you see some errors it could be caused by permission issues so make sure to check it.
 ### From git-hub
-Make sure to install all the dependencies using npm install.
+If you fork this code from giy-hub make sure to install all the dependencies using npm install.
 ```bash
 npm install
 ```
