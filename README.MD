@@ -1,9 +1,9 @@
-# QUICK-MAKER
+# REACT-ANGULAR-VUE-QUICK-STARTER
 quick-maker is an user friendly npm package that helps to create a project where you can choose beetween React, Angular and Vue in a faster and easier way using only two clicks from the CLI.
 ## Installation
-Use the package manager (npm) to install quick-manager
+Use the package manager (npm) to install react-angular-vue-quick-starter
 ```bash
-npm install quick-maker
+npm install react-angular-vue-quick-starter
 ```
 ### Attention
 Make sure to have angular and vue installed on your system.
