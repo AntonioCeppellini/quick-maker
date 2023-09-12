@@ -17,7 +17,7 @@ Make sure to have angular and vue installed on your system.
 If you see some errors it could be caused by permission issues so make sure to check it.
 ### From GitHub
 GitHub link: (https://github.com/AntonioCeppellini/react-angular-vue-quick-starter)
-If you fork this code from git-hub make sure to install all the dependencies using ""npm install"
+If you fork this code from GitHub make sure to install all the dependencies using ""npm install"
 ```bash 
 npm install
 ```
