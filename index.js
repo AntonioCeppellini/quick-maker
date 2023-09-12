@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-//import everything that we need
-const chalk = require ('chalk')
-const inquirer = require('inquirer');
-const { spawn } = require('child_process');
+import chalk from 'chalk'
+import inquirer from 'inquirer'
+import {spawn} from 'child_process'
 //creating the questions that we need in the CLI app using inquirer
 const questions = [
     {
@@ -18,7 +17,7 @@ const questions = [
 ];
 //creating the interations that we need in the CLI app using inquirer
 inquirer.prompt(questions).then(answers => {
-    console.log(chalk.backgroundColorNames(`Creating your ${answers.Project}...`))
+    console.log(chalk.blue(`Creating your ${answers.Project}...`))
     //initialize the variables that we'll use for the decisions making
     var project_type = answers.Project;
     var project_name = answers.name;

@@ -10,7 +10,10 @@ Make sure to have angular and vue installed on your system.
 If you see some errors it could be caused by permission issues so make sure to check it.
 ### From git-hub
 <<<<<<< HEAD
-If you fork this code from giy-hub make sure to install all the dependencies using npm install.
+If you fork this code from giy-hub make sure to install all the dependencies using npm install. And in case you should use 
+```bash
+npm link 
+```
 =======
 if you fork this from git-hub make sure to install all the dependencies using npm install.
 >>>>>>> cdb6f2c0e07f7c2ac56e4ade7628acbeff29538b
