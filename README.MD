@@ -13,7 +13,7 @@ If you fork this code from git-hub make sure to install all the dependencies usi
 ```bash
 npm install
 ```
-You should probabbly also use
+You should probably also use
 ```bash
 npm link 
 ```
